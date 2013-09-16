@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Simple Green
+Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20080808
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script language="javascript" type="text/javascript" src="forwebpage.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Sing-up </title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#scroll").click(function(){
+    $(".post").slideDown();	
+	$("#headingdiv").slideUp();	
+	$("#sidebar").fadeOut();
+  });
+});
+</script>
+
+</head>
+<body>
+
+<!-- start header -->
+
+<div id="header">
+	<h1>Web for ALL</h1>
+	<p> On the run</p><p align="right" style="margin-right=30px;">Home </p>
+
+	
+</div>
+<!-- end header -->
+<!-- start page -->
+
+	<div id="page">
+		<div class="bgtop">
+			<div class="bgbtm">
+				<!-- start content -->
+				<div id="content">
+					<div class="post" id="headingdiv">
+						<h1 class="title">Get registered and get Started</h1>
+						<p class="byline"><small>Easier and quick<a href="#"></a> |</small></p>
+						<div class="entry" id="forscrollup">
+							<p>
+							<strong>
+							<img src="images/img05.jpg" alt="" width="131" height="131" class="left" />
+							For making best possible usage of the web services preovided by us, be an authenitacted user. Fill a small</strong>
+							<a id="scroll"> REGISTRATION</a><strong> and get going.</strong>
+							
+						</div>
+						<p class="meta"></input></a> &nbsp;&nbsp; &nbsp;&raquo;&nbsp;&nbsp;</p>
+					</div>
+					<div class="post" style="display: none;" align="center">
+						<h2 class="title">Enter the details</h2>
+						
+						<div class="entry">
+							<form name="myform" method="get" action="next.html" onSubmit="return validate2()" >
+							
+							<table>
+							<tr><td width=150 align="Left">*<strong>First Name:</td><td><input type="text" size=27 name="fname" id="fname"></td></tr>
+							<tr><td align="Left">*<strong>Last Name: </td><td><input type="text" size=27 id="lname" name="lname"></td></tr>
+							
+							<tr><td align="Left">*<strong>City:</td>		<td><input type="text" size=27 id="city" name="city"></td></tr>
+							<tr><td align="Left">*<strong>Date of birth:</td>	
+							<td>
+							<select id="date" name="date">
+							<option value="0"> Date</option>
+							<option value="1"> 01</option>	<option value="2"> 02</option>
+							<option value="3"> 03</option>	<option value="4"> 04</option>
+							<option value="5"> 05</option>	<option value="6"> 06</option>
+							<option value="7"> 07</option>	<option value="8"> 08</option>
+							<option value="9"> 09</option>	<option value="10"> 10</option>
+							<option value="11"> 11</option>	<option value="12"> 12</option>
+							<option value="13"> 13</option>	<option value="14"> 14</option>
+							<option value="15"> 15</option>	<option value="16"> 16</option>
+							<option value="17"> 17</option>	<option value="18"> 18</option>
+							<option value="19"> 19</option>	<option value="20"> 20</option>
+							<option value="21"> 21</option>	<option value="22"> 22</option>
+							<option value="23"> 23</option>	<option value="24"> 24</option>
+							<option value="25"> 25</option>	<option value="26"> 26</option>
+							<option value="27"> 27</option>	<option value="28"> 28</option>
+							<option value="29"> 29</option>	<option value="30"> 30</option>
+							</select>
+							
+							<select id="month" name="month">
+							<option value="0"> Month</option>	
+							<option value="jan"> Jan</option>	<option value="feb"> Feb</option>
+							<option value="mar"> Mar</option>	<option value="apr"> Apr</option>
+							<option value="may"> May</option>	<option value="jun"> Jun</option>
+							<option value="jul"> Jul</option>	<option value="aug"> Aug</option>
+							<option value="sep"> Sep</option>	<option value="oct"> Oct</option>
+							<option value="nov"> Nov</option>
+							<option value="dec"> Dec</option>
+							</select>
+							
+							<select id="year" name="year">
+							<option value="0"> Year</option>	
+							<option value="1990"> 1990</option><option value="1991"> 1991</option>
+							<option value="1992"> 1992</option><option value="1993"> 1993</option>
+							<option value="1994"> 1994</option><option value="1995"> 1995</option>
+							<option value="1996"> 1996</option><option value="1997"> 1997</option>
+							<option value="1998"> 1998</option><option value="1999"> 1999</option>
+							<option value="2000"> 2000</option><option value="2001"> 2001</option>
+							</select>
+							
+							</td>
+								</tr>
+							<tr><td align="Left"><strong>*Contact no:</td>	<td><input type="text" id="num" name="num" size=27 onBlur="return isNumericKey(e)"></td></tr>
+							
+							<tr><td align="Left"><br></td>
+							<tr><td colspan=2  ><strong>Choose your credentials</td></tr>
+							<tr><td><br></td></tr>
+							
+							<tr><td align="Left">*<strong>Email id:</td>	<td><input type="text" size=27 id="email1" name="email1"></td></tr>
+							<tr><td align="Left">*<strong>Password:</td>	<td><input type="password" size=27  id="password" name="password"></td></tr>
+							
+							<tr><td><br></td>
+							<tr><td colspan=2 ><strong>Security Question</td></tr>
+							<tr><td><br></td></tr>
+							
+							<tr><td align="Left">*<strong>Select a question</td>
+							<td align="Left">
+							<select id="quelist" width=27>
+							<option value="0"> Select a question</option>
+							<option value="1"> whats your pets name?</option>
+							<option value="2"> whats your mothers name?</option>
+							<option value="3"> whats your vehicle number?</option>
+							<option value="4"> whats your nickname?</option>
+							</select>
+							</td></tr>
+							
+							<tr><td align="Left">*<strong>Your answer</td>	<td><input type="text" size=27 id="secretAnswer"></td></tr>
+							
+							
+							
+							</table>			
+							<tr><td><br></td></tr>
+							<tr><td><input type="submit" value="Register"></td>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<!-- end content -->
+				<!-- start sidebar -->
+				<div id="sidebar" align="center">
+				&nbsp<br>
+				
+				
+				<h2> Already a user</h2>
+				&nbsp<br>
+				&nbsp<br>	<br>
+						<table>
+						<tr><td><input type="text" name="" size= 30 value="Enter Username" disabled></td></tr>
+						<tr><td><input type="text" name="" size=30 value="Enter Password" disabled></td></tr>
+						<tr><td><input type="submit" value="Sign in"></input></td></tr>
+						</table>
+				</div>
+				<!-- end sidebar -->
+				<div style="clear:both">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+<div id="footer">
+	<p>&copy;2013 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a href="#">Koustubh</a> &nbsp;&bull;&nbsp; Icons by <a href="#">Google Images</a>.</p>
+</div>
+</body>
+</html>

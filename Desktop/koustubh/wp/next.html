@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Simple Green
+Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20080808
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script language="javascript" type="text/javascript" src="forwebpage.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Simple Green by Free CSS Templates</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+  /*
+  var query = window.location.search;
+  // Skip the leading ?, which should always be there, 
+  // but be careful anyway
+  if (query.substring(0, 1) == '?') {
+    query = query.substring(1);
+  }
+  var data = query.split(','); 
+  for (i = 0; (i < data.length); i++) {
+    data[i] = unescape(data[i]);
+  }
+  
+  */
+  
+  function get_params1() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[0].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+} 
+ function get_params2() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[1].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+}  
+
+function get_params3() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[2].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+} 
+
+ function get_params4() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[3].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+}
+
+  function get_params5() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[4].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+}
+
+  function get_params6() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[5].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+}
+
+  function get_params7() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[6].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+} 
+
+  function get_params8() {
+    var url = window.location.href;
+    var q_str_part = url.match(/\?(.+)$/)[1];
+
+    var val_pairs = q_str_part.split('&');
+    var params = {};
+        var tmp = val_pairs[7].split('=');
+        params[tmp[0]] = typeof tmp[1] != 'undefined' ? tmp[1] : '';
+		return params[tmp[0]];
+} 
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $("#Nowregister").click(function(){
+   
+	$("#sidebar").fadeIn();
+  }
+  );
+});
+</script>
+
+</head>
+<body onLoad="get_params()">
+
+<!-- start header 
+<div id="topbg">&nbsp;</div>
+-->
+<div id="header">
+	<h1>Web for ALL</h1>
+	<p> On the run </p>
+</div>
+<!-- end header -->
+<!-- start page -->
+
+	<div id="page">
+		<div class="bgtop">
+			<div class="bgbtm">
+				<!-- start content -->
+				<div id="content">
+					<div class="post" id="headingdiv">
+						<h1 class="title">Registered with details:</h1>
+						<p class="byline"><small>Check your details<a href="#"></a> |</small></p>
+						
+						
+					</div>
+					<div class="post" align="center">
+						<div class="entry">
+							<form name="myform" method="get" onclick="validate2()" action="display.html">
+							
+							<table>
+							<tr><td width=150  align="Left"><strong>First Name:</td><td align="Left"><script>document.write(get_params1());  </script></td></tr>
+							<tr><td  align="Left"><strong>Last Name: </td><td align="Left"><script>document.write(get_params2());  </script></td></tr>
+							
+							<tr><td align="Left"><strong>City:</td>		<td align="Left"><script>document.write(get_params3());  </script></td></tr>
+							<tr><td align="Left"><strong>Date of birth:</td>	
+							<td align="Left">
+							<script>document.write(get_params4()+" "+get_params5()+" "+get_params6());  </script>
+							</td>
+								</tr>
+							<tr><td align="Left"><strong>Contact no:</td>	<td align="Left"><script>document.write(get_params7());  </script></td></tr>
+							
+							<tr><td><br></td>
+							<tr><td colspan=2><strong>Your credentials</td></tr>
+							<tr><td align="Left"><strong>Email id:</td>	<td align="Left"><script>document.write(get_params8());  </script></td></tr>
+													
+							</table>			
+							<tr><td><br></td></tr>
+							
+							
+							</form>
+							
+							<p>You can now<a id="Nowregister"> Sign in</a></p>
+						</div>
+						
+					</div>
+				</div>
+				<!-- end content -->
+				<!-- start sidebar -->
+				<div id="sidebar" align="center" style="display: none;">
+				&nbsp<br>
+				
+				
+				<h2> Already a user</h2>
+				&nbsp<br>
+				&nbsp<br>	<br>
+						<table>
+						<tr><td><input type="text" name="" size= 27 value="Enter Username" disabled></td></tr>
+						<tr><td><input type="text" name="" size=27 value="Enter Password" disabled></td></tr>
+						<tr><td><input type="submit" value="Sign in"></input></td></tr>
+						</table>
+				</div>
+				<!-- end sidebar -->
+				<div style="clear:both">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+<div id="footer">
+	<p>&copy;2013 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a href="#">Koustubh</a> &nbsp;&bull;&nbsp; Icons by <a href="#">Google Images</a>.</p>
+</div>
+</body>
+</html>
